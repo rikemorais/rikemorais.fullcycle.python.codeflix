@@ -1,0 +1,16 @@
+{
+	"name": "Micro Vídeos Python",
+	"dockerComposeFile": [
+		"../docker-compose.yaml",
+		"docker-compose.yml"
+	],
+	"service": "app",
+	"workspaceFolder": "/home/python/app",
+	"settings": {
+		"terminal.integrated.defaultProfile.linux": "bash"
+	},
+	"extensions": [
+		"ms-python.python"
+	],
+	"remoteUser": "python"
+}
