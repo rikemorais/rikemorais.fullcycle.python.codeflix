@@ -10,7 +10,8 @@
 		"terminal.integrated.defaultProfile.linux": "bash"
 	},
 	"extensions": [
-		"ms-python.python"
+		"ms-python.python",
+		"SonarSource.sonarlint-vscode"
 	],
 	"remoteUser": "python"
 }
