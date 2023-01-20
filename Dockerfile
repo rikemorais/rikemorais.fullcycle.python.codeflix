@@ -1,6 +1,9 @@
 FROM python:3.10.1-slim
 
-RUN apt update && apt install -y --no-install-recommends default-jre
+RUN apt update && apt install -y --no-install-recommends \
+                    default-jre \
+                    git
+
 RUN useradd -ms /bin/bash python
 
 USER python
