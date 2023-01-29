@@ -11,8 +11,7 @@ class ValueObject(ABC):
         fields_name = [field.name for field in fields(self)]
         return str(getattr(self, fields_name[0])) \
             if len(fields_name) == 1 \
-            else json.dumps({fields_name: getattr(self, field_name) 
-                             for field_name in fields_name})
+            else json.dumps({fields_name: getattr(self, field_name) for field_name in fields_name})
 
 @dataclass(frozen=True)
 class UniqueEntityId:
